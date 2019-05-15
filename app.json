@@ -8,7 +8,7 @@
       "ios",
       "android"
     ],
-    "version": "1.0.0",
+    "version": "1.1.73",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -23,6 +23,7 @@
       "**/*"
     ],
     "ios": {
+      "bundleIdentifier": "com.heatherandmatt.picyourlandmark",
       "supportsTablet": false,
       "infoPlist": {
         "NSLocationWhenInUseUsageDescription": "Allow Expo experiences to use your location.",
@@ -30,6 +31,11 @@
         "NSPhotoLibraryAddUsageDescription": "This app uses the camera to scan barcodes on event tickets.",
         "NSPhotoLibraryUsageDescription": "This app uses the camera to scan barcodes on event tickets."
       }
+    },
+    "android": {
+      "package": "com.heatherandmatt.picyourlandmark",
+      "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION", "CAMERA", "READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE" ],
+      "versionCode": 12
     }
   }
 }
